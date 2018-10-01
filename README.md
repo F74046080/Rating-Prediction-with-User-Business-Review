@@ -10,4 +10,9 @@ Use following methods to accomplish the prediction of the restuarant rating
 	* K-fold :  Split the data into k equal sized subsamples. Retain one of subsample for testing model and repeat k times.
 	* Hyperparameter Tuning : Learning rate, iterators, layers etc.
 4. Commercial Recommendation System
-	
+	* Discrete
+		* Linear SVC
+		* Linear Regressino
+	* Continuous
+		* Linear SVR
+		* SVR

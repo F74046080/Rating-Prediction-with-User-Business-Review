@@ -22,3 +22,10 @@ Use following methods to accomplish the prediction of the restuarant rating
 
 ## Purpose
 Use training data to train model, then use the model for test data to predict the restaurant stars
+
+## The methods I tried
+* text
+	1. Drop the unnecessary column(it must be test many times)
+	2. Use nltk.stem library to remove the prefixes, suffixes from a word and and change it to its base form.
+	3. Drop the stopword 
+	4. Use TF-IDF(n_gram: choose numbers of the words, min_df and max_df: filter the result ) to divide the string.

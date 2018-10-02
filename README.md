@@ -1,5 +1,6 @@
 # Rating Prediction with User Business Review
 
+## Overview
 Use following methods to accomplish the prediction of the restuarant rating
 1. Text Data Processing
 	* cunt vectorizer : Convert the words into matrix.
@@ -10,9 +11,14 @@ Use following methods to accomplish the prediction of the restuarant rating
 	* K-fold :  Split the data into k equal sized subsamples. Retain one of subsample for testing model and repeat k times.
 	* Hyperparameter Tuning : Learning rate, iterators, layers etc.
 4. Commercial Recommendation System
-	* Discrete
-		* Linear SVC
-		* Linear Regressino
-	* Continuous
-		* Linear SVR
-		* SVR
+
+## Data
+* training data
+	* total nearly 8000
+	* include review_id, business_id, user_id, text, date, stars
+* test data
+	* total nearly 2000
+	* include review_id, business_id, user_id, text, date
+
+## Purpose
+Use training data to train model, then use the model for test data to predict the restaurant stars

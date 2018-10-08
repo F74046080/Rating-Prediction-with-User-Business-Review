@@ -31,6 +31,6 @@ Use training data to train model, then use the model for test data to predict th
 	4. Use TF-IDF(n_gram: choose numbers of the words, min_df and max_df: filter the result ) to divide the string.
 	
 	
-## Result
+## Best Result
 * Accuracy 0.5042
-* RMSE() 0.8071
+* RMSE(Root-Mean-Square Error) 0.8071

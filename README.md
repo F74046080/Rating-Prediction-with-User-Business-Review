@@ -29,7 +29,10 @@ Use training data to train model, then use the model for test data to predict th
 	2. Use nltk.stem library to remove the prefixes, suffixes from a word and and change it to its base form.
 	3. Drop the stopword 
 	4. Use TF-IDF(n_gram: choose numbers of the words, min_df and max_df: filter the result ) to divide the string.
-	
+
+* model
+	* discrete - linearSVC and Linear Regression: convert the matrix into high dimension, the accurancy is higher, MSE is higher because of the result is in integer
+	* continuous -  
 	
 ## Best Result
 * Accuracy 0.5042

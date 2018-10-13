@@ -36,9 +36,9 @@ Use training data to train model, then use the model for test data to predict th
 
 ## Notation
 * In tf-idf, the n_gram selecte number of the words. example: Tom is not handsome.
+* The continuous training model will be out of the rating range(1 to 5)
 n_gram = 1 -> Tom, is, not, handsome; n_gram = 2 Tom is, is not, not handsome.
-* The continuous training model will be out of the rate range(1 to 5)
-* To reduce the RMSE, can make all rate larger than 4.6, 
+* To reduce the RMSE, can make all rating larger than 4.6, convert it to 4.6; all rating smaller than 0.5, convert it to 0.5.
 
 ## Best Result
 * Accuracy 0.5042

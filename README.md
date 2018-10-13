@@ -26,14 +26,20 @@ Use training data to train model, then use the model for test data to predict th
 ## The methods I tried
 * texts
 	1. Drop the unnecessary column(it must be test many times)
-	2.  喔UseUse nltk.stem library to remove the prefixes, suffixes from a word and and change it to its base form.
+	2. Use nltk.stem library to remove the prefixes, suffixes from a word and and change it to its base form.
 	3. Drop the stopword 
 	4. Use TF-IDF(n_gram: choose numbers of the words, min_df and max_df: filter the result ) to divide the string.
 
 * model
 	* discrete - linearSVC and linear regression: convert the matrix into high dimension, the accurancy is higher, MSE is higher because of the result is in integer.
 	* continuous -  linearSVR and SVR: the result will be out of 5(the maximum of rating), we may need to filter the result to make it range from 1 to 5
-	
+
+## Notation
+* In tf-idf, the n_gram selecte number of the words. example: Tom is not handsome.
+n_gram = 1 -> Tom, is, not, handsome; n_gram = 2 Tom is, is not, not handsome.
+* The continuous training model will be out of the rate range(1 to 5)
+* To reduce the RMSE, can make all rate larger than 4.6, 
+
 ## Best Result
 * Accuracy 0.5042
 * RMSE(Root-Mean-Square Error) 0.8071
